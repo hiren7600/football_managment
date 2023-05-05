@@ -1,0 +1,28 @@
+{{ form_start(form) }}
+{{ form_errors(form) }}
+<div class="mb-3 col-4">
+  <label class="form-label" for="player_image">Player Image</label>
+  {{ form_row(form.image, {'attr': {'class': 'form-control'} , label: false })  }}
+</div>
+<div class="mb-3 col-4">
+  <label class="form-label" for="firstname">Firstname</label>
+  {{ form_row(form.firstname, {'attr': {'class': 'form-control'} , label: false })  }}
+</div>
+<div class="mb-3 col-4">
+  <label class="form-label" for="firstname">Lastname</label>
+  {{ form_row(form.lastname, {'attr': {'class': 'form-control'} , label: false })  }}
+</div>
+<div class="mb-3 col-4">
+  <label class="form-label" for="firstname">Expacted Price</label>
+  {{ form_row(form.expacted_price, {'attr': {'class': 'form-control'} , label: false })  }}
+</div>
+<div class="mb-4 col-4">
+  <label class="form-label" for="firstname">Base Price</label>
+  {{ form_row(form.base_price, {'attr': {'class': 'form-control'} , label: false })  }}
+</div>
+<div class="mb-3 col-4">
+ <label class="form-label" for="firstname">Select Team </label>
+  {{ form_row(form.team, {'attr': {'class': 'form-select'} , label: false })  }}
+</div>
+<button class="button player-btn">{{ button_label|default('Save') }}</button>
+{{ form_end(form) }}

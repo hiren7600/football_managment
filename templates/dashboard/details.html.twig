@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Team{% endblock %}
+
+{% block body %}
+
+
+  <h1>Team Players</h1>
+
+<section class="Players">
+  <div class="container">
+    <div class="main-players">           
+      {% for key,teamPlayer in teamPlayers %}
+        <div class="hero-player-block">	
+          <div class="center">
+              {% if teamPlayer.team is null  %}
+                  <a href="{{ path('app_player_addtoteam', {'id': teamPlayer.id}) }}" class="button show-btn mt-2 mb-2">Add to Team</a>
+              {% else %}	
+                  <a href="{{ path('app_player_addtoteam', {'id': teamPlayer.id}) }}" class="button edit-btn mt-2 mb-2">Change Team</a>
+              {% endif %}	
+          </div>			
+          <a href="{{ path('app_player_edit', {'id': teamPlayer.id}) }}" class="player">
+            <div class="img-player">
+              <img src="{{ asset(player_dir ~ teamPlayer.image ) }}" alt="Player-img">
+            </div>
+
+            <div class="info-player">
+              <div class="name-player">
+                <h2>{{ teamPlayer.firstname }}
+                  {{ teamPlayer.lastname }}</h2>
+              </div>
+            </div>
+          </a>
+        </div>
+      {% else %}
+        <tr>
+          <td colspan="7">no records found</td>
+        </tr>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% endblock %}

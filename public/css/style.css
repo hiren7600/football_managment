@@ -1,0 +1,405 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0px auto;
+    padding: 0px 20px;
+}
+
+/* header-start */
+header {
+    background: linear-gradient(92.04deg, #18184a 24.18%, #19398a 50.95%, #18184a 110.32%);
+    padding: 20px 0px;
+    background: url(../images/header-curl-bg.svg) right/contain no-repeat, url(../images/header-rotate.png) left/contain no-repeat #19398a;
+}
+
+img {
+    max-width: 100%;
+}
+
+.logo img {
+    max-width: 70%;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+.main-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.list-item ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.list-item ul li {
+    list-style: none;
+}
+
+.list-item ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: bebas_neueregular;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+    font-weight: 500;
+    position: relative;
+
+}
+
+.list-item ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    width: 0px;
+    margin: 0px auto;
+    background-color: #fff;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.list-item ul li a:hover::after {
+    opacity: 1;
+    width: 50%;
+}
+
+/* header-end */
+/* Teams start */
+.Teams {
+    background-color: #071026;
+    background-size: cover;
+    height: 100%;
+    background-repeat: no-repeat;
+    padding: 100px 0px;
+}
+
+.ipl img {
+    display: block;
+    margin: 0px auto;
+    margin-bottom: 20px;
+}
+
+.main-teams {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+
+
+.csk {
+    border-radius: 8px;
+    height: 300px;
+    width: 296px;
+    background: linear-gradient(133.55deg, #4d4d4f -30.17%, rgba(77, 77, 79, 0) 117.73%);
+    overflow: hidden;
+    z-index: 99;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23%;
+    max-width: 100%;
+
+}
+
+.csk-logo {
+    background-color: #ffcb05;
+    height: 400px;
+    width: 400px;
+    border: 2px solid #ffcb05;
+    border-radius: 100%;
+    position: absolute;
+    left: auto;
+    right: auto;
+    margin: auto;
+    top: -200px;
+    z-index: -1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 48px;
+}
+
+.csk-logo img {
+    display: block;
+    margin: 0px auto;
+}
+
+.heading h3 {
+    text-align: center;
+    font-size: 18px;
+    line-height: 31px;
+    color: #fff;
+    font-family: bebas_neueregular;
+    margin-top: 160px;
+    text-transform: uppercase;
+}
+
+
+
+.csk-logo.dc-color {
+    background-color: #b9251c;
+    border: 2px solid #b9251c;
+}
+
+.csk-logo.gt-color {
+    background-color: #77c7f2;
+    border: 2px solid #77c7f2;
+}
+
+.csk-logo.kkr-color {
+    background-color: #ecc542;
+    border: 2px solid #ecc542;
+}
+
+.csk-logo.lsg-color {
+    background-color: #fff;
+    border: 2px solid #fff;
+}
+
+.csk.dc {
+    background: linear-gradient(137.7deg, #051677 1%, #001939 110.83%);
+}
+
+.csk.kkr {
+    background: linear-gradient(137.7deg, rgba(49, 36, 83, .8) 1%, rgba(48, 35, 83, .8) 110.83%);
+}
+
+.csk-logo.mi-color {
+    background-color: #2d6ab1;
+    border: 2px solid #2d6ab1;
+}
+
+.csk.lsg {
+    background-color: #0d6efd;
+
+}
+
+.csk.mi {
+    background: linear-gradient(137.7deg, rgba(48, 64, 117, .8) 1%, rgba(48, 64, 117, .8) 110.83%);
+}
+
+.csk-logo.Pbks-color {
+    background-color: #dc3545;
+    border: 2px solid #dc3545;
+}
+
+.csk-logo.RR-color {
+    background-color: #eb83b5;
+    border: 2px solid #eb83b5;
+}
+
+/* Teams End */
+/* PlayerPage-start */
+.Players {
+    padding: 50px 0px;
+}
+
+.heading-players h2 {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 28px;
+    color: #1d1d1d;
+    margin-bottom: 20px;
+}
+
+.main-players {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.player {
+    height: auto;
+    border: 1px solid #b8b9bb;
+    border-radius: 4px;
+    width: calc(20% - 16px);
+    position: relative;
+}
+
+.captain-symbol img {
+    position: absolute;
+    left: 5px;
+    top: 20px;
+}
+
+.gloves-symbol img {
+    position: absolute;
+    right: 5px;
+    top: 20px;
+}
+
+.batter-player img {
+    position: absolute;
+    right: 5px;
+    top: 20px;
+}
+
+.info-player {
+    border-top: 1px solid #b8b9bb;
+    padding: 20px 0px;
+}
+
+.img-player img {
+    display: block;
+}
+
+.name-player h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    color: #282b32;
+    font-family: bebas_neueregular;
+    text-transform: uppercase;
+}
+
+.name-player span {
+    color: rgba(17, 20, 28, .7);
+    font-size: 15px;
+    margin-bottom: 10px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+/* Playerpage-end */
+/* Player-detail start */
+.player-detail {
+    background: linear-gradient(180deg, #FFCB05 0%, #FFCB05 100%);
+    padding: 50px 0px;
+    position: relative;
+
+}
+
+.main-playerdetail {
+    display: flex;
+    align-items: center;
+
+}
+
+.player-info {
+    width: 40%;
+    max-width: 100%;
+    height: 100%;
+}
+
+.player-photo img {
+    max-width: 90%;
+    width: 100%;
+
+}
+
+.player-photo {
+    position: relative;
+    z-index: 99;
+}
+
+.player-photo::after {
+    content: '';
+    position: absolute;
+    left: 82px;
+    top: 120px;
+    border: 10px solid #fff;
+    width: 50%;
+    height: 252px;
+    margin: 0px auto;
+    z-index: -1;
+}
+
+.overflow-color {
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(180deg, rgba(250, 195, 0, 0) 0, rgba(245, 195, 18, .7) 56.77%, #ffb802 100%);
+
+}
+
+.player-name h2 {
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 0 9px 20px rgba(0, 0, 0, .16);
+    font-family: bebas_neueregular;
+
+    position: absolute;
+    top: 333px;
+    left: 344px;
+    z-index: 999;
+}
+
+.player-name span {
+    background: rgba(0, 0, 0, .2);
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 10px;
+    font-style: italic;
+    font-weight: 600;
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    top: 396px;
+    left: 420px;
+    z-index: 999;
+}
+
+.player-overview h2 {
+    font-size: 24px;
+    color: #11141c;
+    text-align: left;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    height: auto;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-items {
+    color: #000;
+    text-align: center;
+    border: 0.5px solid rgba(0 0 0 / 100%);
+    outline: rgba(0 0 0 / 100%) solid 0.5px;
+    padding: 15px;
+}
+
+.grid-items p {
+    font-family: bebas_neueregular;
+    font-size: 22px;
+    color: #11141c;
+    margin-bottom: 0;
+}
+
+.grid-items span {
+    font-size: 14px;
+    text-align: center;
+    color: rgba(17, 20, 28, .7);
+}
+
+/* Player-detail end */

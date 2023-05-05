@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	</head>
+	{% include 'layout/head.html.twig' %}
+	<body>
+		<main class="main" id="top">
+			<div class="container-fluid px-0" data-layout="container">
+				{% include 'layout/leftmenu.html.twig' %}
+				<div class="content">
+					<div class="mx-n4 px-4 mx-lg-n6 px-lg-6 bg-white pt-7 border-y border-300"> {% block body %}{% endblock %}
+						</div>
+					</div>
+				</div>
+			</main>
+		</body>
+		{% include 'layout/foot.html.twig' %}
+	</html>

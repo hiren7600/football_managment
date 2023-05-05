@@ -1,0 +1,14 @@
+# twig:
+#     default_path: '%kernel.project_dir%/templates'
+# globals:
+#     player_dir: 'images/players/'
+#     team_dir: 'images/teams/'
+
+twig:
+    globals:
+        player_dir: 'images/players/'
+        team_dir: 'images/teams/'
+
+when@test:
+    twig:
+        strict_variables: true
